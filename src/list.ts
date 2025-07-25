@@ -45,3 +45,14 @@ export function markPurchased(id: string): void {
 }
 
 
+export function showList(): void {
+  console.log('\n Grocery List:');
+  if (groceryList.length === 0) {
+    console.log('(Empty)');
+  } else {
+    groceryList.forEach(item => {
+      const status : string = item.purchased ? 'purchased' : 'not purchased';
+      console.log(`[${status}] ${item.name} x${item.quantity} (ID: ${item.id})`);
+    });
+  }
+}
