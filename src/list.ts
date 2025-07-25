@@ -22,3 +22,15 @@ export function addItem(name: string, quantity: number): void {
 }
 
 
+export function removeItem(id: string): void {
+  const index : number = groceryList.findIndex(item => item.id === id);
+  if (index !== -1) {
+    const removed = groceryList.splice(index, 1)[0];
+    console.log(` Removed "${removed.name}"`);
+  } else {
+    console.log(` Item with ID ${id} not found.`);
+  }
+}
+
+
+
