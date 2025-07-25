@@ -34,3 +34,14 @@ export function removeItem(id: string): void {
 
 
 
+export function markPurchased(id: string): void {
+  const item = groceryList.find(item => item.id === id);
+  if (item) {
+    item.purchased = true;
+    console.log(` Marked "${item.name}" as purchased.`);
+  } else {
+    console.log(` Item with ID ${id} not found.`);
+  }
+}
+
+
