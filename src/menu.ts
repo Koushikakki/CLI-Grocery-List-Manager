@@ -17,6 +17,8 @@ export function showMenu() :void {
     rl.question('Choose an option (1-5): ', handleMenu);
 } 
 
+
+
 export function handleMenu(choice:string) : void {
     switch(choice.trim()){
         case '1':
