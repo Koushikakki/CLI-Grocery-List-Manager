@@ -12,11 +12,22 @@ This CLI lets you:
 
 - View your grocery list
 
+## Requirements needed
+
+- Node.js 
+- TypeScript 
+- ts-node (to run `.ts` files directly)
+
 ## How to run
 
 1. Clone the Repository
 
 git clone https://github.com/your-username/grocery-cli.git
+
 cd grocery-cli
 
-2.
+2. Compile and Run via ts-node
+
+   npx ts-node index.ts
+
+   ts-node index.ts
